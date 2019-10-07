@@ -4,4 +4,13 @@
 <constructor-arg value="7"></constructor-arg>
 </bean>
 
+<bean id="twinkle" class="com.zensar.spring.poems.TwinkleTwinkle">
+</bean>
+
+<bean id="Katrina Kaif" class="com.zensar.spring.performers.PoeticJuggler">
+<constructor-arg value="1"></constructor-arg>
+<constructor-arg ref="twinkle"></constructor-arg>
+</bean>
+
+
 </beans>
