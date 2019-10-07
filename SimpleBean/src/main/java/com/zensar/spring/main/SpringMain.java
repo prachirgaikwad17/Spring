@@ -13,10 +13,10 @@ public class SpringMain {
 		//creating the object of Spring IoC container
 		ApplicationContext ctx=new ClassPathXmlApplicationContext("greetings.xml");
 		Greeting g=ctx.getBean("festival",Greeting.class);    //getBean creates obj,"festival"->is Id
-		System.out.println(g.greet());
+		//System.out.println(g.greet());
 		
-		Greeting g1=ctx.getBean("anniversary",Greeting.class);    //getBean creates obj
-		System.out.println(g1.greet());
+		Greeting g1=ctx.getBean("festival",Greeting.class);    //getBean creates obj
+		//System.out.println(g1.greet());
 	}
 
 }
