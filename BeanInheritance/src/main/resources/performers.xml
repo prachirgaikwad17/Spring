@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+<bean id="guitar" class="com.zensar.spring.instruments.Guitar"></bean>
+<bean id="piano" class="com.zensar.spring.instruments.Piano"></bean>
+<bean id="Prachi" class="com.zensar.spring.performers.Instrumentalist">
+<property name="instrument" ref="guitar"></property>
+<property name="song" value="tera Buzz muze jine na de"></property>
+</bean>
+
+<bean id="Arman" parent="Prachi">
+<property name="song" value="this is all we know"></property>
+</bean>
+
+<bean id="Rucha" parent="Arman">
+<property name="instrument" ref="piano"></property>
+</bean>
+
+</beans>
